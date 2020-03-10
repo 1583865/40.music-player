@@ -1,0 +1,76 @@
+
+body {
+	margin: 0px;
+	width: 1000;
+	height: 820px;
+	/*background-color: lightblue;*/
+	background:url("./img/3.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.player {
+	position: relative;
+	display: flex;
+	/*开启弹性盒*/
+	justify-content: center;
+	align-items: center;
+	width: 600px;
+	height: 600px;
+	background-color: red;
+	margin: 50px auto;
+	background: url("./img/8.jpg") no-repeat;
+	background-size: 600px 600px;
+	border-radius: 50%;
+	background-position: center;
+
+}
+
+.player img {
+	width: 430px;
+	height: 430px;
+	position: absolute;
+	top: 85px;
+	left: 86px;
+	border-radius: 50%;	
+}
+.player img:hover {
+	animation: myfirst 8s linear;
+	animation-iteration-count: infinite;
+}
+@keyframes myfirst {
+	0% {
+		transform:rotate(0deg);
+	}
+	20% {
+		transform:rotate(90deg);
+	}
+	40% {
+		transform:rotate(180deg);
+	}
+	60% {
+		transform:rotate(270deg);
+	}
+	80% {
+		transform:rotate(300deg);
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+.btn {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: url("./img/7.jpg") no-repeat;
+	background-position: center;
+}
+.btn-play {
+	position: absolute;
+	top: 16px;
+	left: 17px;
+	width: 30px;
+	height: 30px;
+	background: url("./img/6.jpg") no-repeat;
+	background-position: center;
+
+}
